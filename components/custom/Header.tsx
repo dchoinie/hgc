@@ -2,6 +2,7 @@ import React from "react";
 import Container from "./Container";
 import Link from "next/link";
 import { ShoppingCart, User } from "lucide-react";
+import Image from "next/image";
 
 export interface NavItem {
   label: string | React.ReactNode;
@@ -23,13 +24,14 @@ const Header = () => {
     <div className="py-4">
       <Container>
         <div className="flex justify-between">
-          <div>
-            <img
-              src="https://placehold.co/400"
-              alt="logo"
-              className="w-[80px] h-[80px]"
-            />
-          </div>
+          <Image
+            src="/logo1.png"
+            alt="logo"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-auto h-[50px] object-contain"
+          />
           <div className="flex gap-12 items-center">
             {navItems.map((item: NavItem) => (
               <div key={item.link}>
