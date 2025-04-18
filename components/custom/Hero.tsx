@@ -7,11 +7,11 @@ import { ShoppingCart } from "lucide-react";
 
 const Hero = (): JSX.Element => {
   return (
-    <div className="h-[calc(100vh-152px)] bg-gray-50">
+    <div className="h-[calc(100vh-122px)] bg-gray-50">
       <Container className="h-full flex items-center">
         <div className="flex gap-12 items-center">
           <div className="flex w-1/2 flex-col">
-            <h1 className="text-6xl font-semibold">
+            <h1 className="text-6xl font-semibold text-gray-800">
               Plant-Powered Wellness, Backed by Science.
             </h1>
             <h3 className="my-6">
